@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaamil International University | Advancing The Frontier</title>
+    <!-- Premium Typography: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Utility Top Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="top-bar-left">
+                <a href="#" class="logo-link" data-route="home">
+                    <img src="img/images (1).jpg" alt="KIU Logo" class="logo-img">
+                    <span class="logo-text">KIU</span>
+                </a>
+            </div>
+            <div class="top-bar-right">
+                <div class="top-bar-links">
+                    <button class="top-btn" data-route="admission">Admission</button>
+                    <button class="top-btn" data-route="news">News</button>
+                    <button class="top-btn" data-route="research">Research</button>
+                </div>
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search Kaamil...">
+                    <div id="search-results" class="search-results-dropdown"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="main-header">
+        <nav class="container main-navbar">
+            <div class="nav-brand" data-route="home">
+                <span class="brand-text">Kaamil International University</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link" data-route="about-kaamil">About Kaamil</a></li>
+                <li><a href="#" class="nav-link" data-route="academics">Academics</a></li>
+                <li><a href="#" class="nav-link" data-route="research">Research</a></li>
+                <li><a href="#" class="nav-link" data-route="health-medicine">Health & Medicine</a></li>
+                <li><a href="#" class="nav-link" data-route="admission">Admission</a></li>
+                <li><a href="#" class="nav-link" data-route="life-on-farm">Life On The Farm</a></li>
+            </ul>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="content-wrapper">
+
+        <!-- HOME VIEW (Landing Page) -->
+        <section id="home-view" class="view-section active">
+
+            <!-- Hero Section 1 -->
+            <div class="hero-section" id="hero-1">
+                <div class="hero-image-container zoom-in-effect">
+                    <img src="img/hero1.png" alt="Kaamil International University Campus" class="hero-image"
+                        data-media="img/hero1.png">
+                </div>
+                <div class="hero-overlay">
+                    <div class="container hero-content">
+                        <span class="hero-badge">Welcome to KIU</span>
+                        <h1 class="hero-title animate-title">Shaping a Better Tomorrow</h1>
+                        <p class="hero-subtitle">Providing world-class higher education, leading-edge research, and
+                            community-driven healthcare initiatives.</p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" data-route="admission">Apply Online 2026</button>
+                            <button class="btn btn-outline-white" data-route="about-kaamil">Discover KIU</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overview Block -->
+            <div class="overview-block container section-padding">
+                <div class="overview-grid">
+                    <div class="overview-header-wrapper">
+                        <span class="section-tag">Overview</span>
+                        <h2 class="section-title">Advancing The Frontier</h2>
+                    </div>
+                    <div class="overview-text-wrapper">
+                        <p class="overview-text">
+                            Kaamil International University stands as a beacon of academic excellence and social impact.
+                            Dedicated to advancing the frontier of knowledge, our institution fosters an environment
+                            where innovation intersects with traditional academic rigor. We cultivate global thinkers,
+                            industry leaders, and compassionate professionals prepared to address the complex challenges
+                            of the 21st century.
+                        </p>
+                        <p class="overview-text">
+                            Through comprehensive degree programs, state-of-the-art facilities, and a diverse
+                            multicultural community, KIU ensures that every student achieves their fullest potential.
+                            Our faculty members are leading researchers and practitioners committed to mentorship and
+                            transformative teaching.
+                        </p>
+                        <button class="btn btn-accent" data-route="about-kaamil">About Kaamil <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- News Grid Section -->
+            <div class="news-section-bg">
+                <div class="container section-padding">
+                    <div class="section-header-row">
+                        <div>
+                            <span class="section-tag">University Updates</span>
+                            <h2 class="section-title text-navy">Latest From Kaamil</h2>
+                        </div>
+                        <button class="btn btn-outline" data-route="news">View All News</button>
+                    </div>
+
+                    <div class="news-grid">
+                        <!-- Left Card (Text content) -->
+                        <div class="news-card news-card-text">
+                            <span class="card-badge">KIU NEWS</span>
+                            <h3 class="news-card-title">KIU ranks among top academic institutions for biomedical
+                                research and development.</h3>
+                            <p class="news-card-excerpt">Our researchers have successfully secured a multi-million
+                                dollar grant to investigate advanced molecular solutions in public health.</p>
+                            <div class="card-footer-action">
+                                <button class="btn btn-accent-dark" data-route="kiu-reports">kiu reports <i
+                                        class="fa-solid fa-file-invoice"></i></button>
+                            </div>
+                        </div>
+
+                        <!-- Right Card (Interactive Media Block) -->
+                        <div class="news-card news-card-media" data-media="img/news_media.png">
+                            <img src="img/news_media.png" alt="KIU News Coverage" class="news-media-img">
+                            <div class="news-media-overlay">
+                                <div class="media-icon-circle">
+                                    <i class="fa-solid fa-expand"></i>
+                                </div>
+                                <div class="media-caption">
+                                    <span class="media-date">August 23, 2026</span>
+                                    <h4>Interactive Media: Classroom Innovation at KIU</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Section 2 -->
+            <div class="hero-section" id="hero-2">
+                <div class="hero-image-container">
+                    <img src="img/hero2.png" alt="KIU Campus Experience" class="hero-image" data-media="img/hero2.png">
+                </div>
+                <div class="hero-overlay bg-gradient-dark">
+                    <div class="container hero-content">
+                        <span class="hero-badge">Campus Life</span>
+                        <h2 class="hero-title">A Vibrant Community Awaits</h2>
+                        <p class="hero-subtitle">Experience our beautifully designed residential spaces, student
+                            organizations, and agricultural testbeds.</p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" data-route="life-on-farm">Explore The Farm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Research Block -->
+            <div class="research-block container section-padding">
+                <div class="research-grid">
+                    <div class="research-text-wrapper">
+                        <span class="section-tag">Innovation & Discovery</span>
+                        <h2 class="section-title">Research for better life</h2>
+                        <p class="research-text">
+                            At Kaamil International University, we believe that academic research should directly
+                            translate into tangible societal benefits. Our interdisciplinary labs tackle complex
+                            problems ranging from agricultural sustainability to high-impact medical solutions, aiming
+                            to elevate quality of life globally.
+                        </p>
+                        <p class="research-text">
+                            By combining academic curiosity with modern industry partnerships, KIU research programs
+                            provide graduate and undergraduate students with unparalleled hands-on scientific training.
+                        </p>
+                        <button class="btn btn-primary" data-route="research">research <i
+                                class="fa-solid fa-microscope"></i></button>
+                    </div>
+                    <div class="research-visual-wrapper">
+                        <div class="stats-card">
+                            <div class="stat-item">
+                                <span class="stat-number">45+</span>
+                                <span class="stat-label">Active Research Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">International Lab Partners</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Published Papers in 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Banner (Full width image) -->
+            <div class="media-banner-section" data-media="img/research.png">
+                <img src="img/research.png" alt="KIU Advanced Laboratories" class="media-banner-img">
+                <div class="media-banner-overlay">
+                    <div class="container media-banner-content">
+                        <div class="media-icon-circle large">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>
+                        </div>
+                        <h3>Explore Our State-Of-The-Art Laboratories</h3>
+                        <p>Click anywhere to view full high-resolution image</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- DYNAMIC INTERNAL ROUTE VIEW -->
+        <section id="dynamic-view" class="view-section container section-padding">
+            <div class="dynamic-page-card">
+                <div class="dynamic-page-header">
+                    <button class="btn-back" id="btn-back-home">
+                        <i class="fa-solid fa-arrow-left-long"></i> Back to Campus
+                    </button>
+                    <span class="dynamic-breadcrumb">Home / <span id="breadcrumb-current">Dynamic Route</span></span>
+                </div>
+
+                <hr class="dynamic-divider">
+
+                <div class="dynamic-content-body">
+                    <h1 id="dynamic-title" class="dynamic-title">Section Title</h1>
+                    <div class="dynamic-lead-text" id="dynamic-lead">
+                        This is a dynamic route placeholder rendering layout content with specific identifiers.
+                    </div>
+
+                    <!-- Mandated Hello World Placeholder -->
+
+
+                    <div class="dynamic-custom-details" id="dynamic-custom-details">
+                        <!-- Custom content will be dynamically generated by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <!-- Branding Column -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <img src="img/images (1).jpg" alt="KIU Logo" class="footer-logo-img">
+                    <h3>KIU</h3>
+                </div>
+                <p class="footer-desc">Kaamil International University is committed to fostering academic excellence,
+                    innovation, and leadership in research and medicine.</p>
+                <div class="newsletter-inline">
+                    <input type="email" placeholder="Your email address" id="newsletter-email">
+                    <button class="btn-newsletter" id="newsletter-btn"><i class="fa-solid fa-envelope"></i></button>
+                </div>
+            </div>
+
+            <!-- Column 1: Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#" data-route="admission-requirements">Admission Requirements</a></li>
+                    <li><a href="#" data-route="tuition-fees">Tuition Fees</a></li>
+                    <li><a href="#" data-route="scholarships">Scholarships</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2: Downloads -->
+            <div class="footer-col">
+                <h4>Downloads</h4>
+                <ul class="footer-links">
+                    <li><a href="#" data-route="undergrad-prospectus">Undergraduate Prospectus</a></li>
+                    <li><a href="#" data-route="graduation-books">Graduation Books</a></li>
+                    <li><a href="#" data-route="somali-business-review">Somali Business Review</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Connect with us -->
+            <div class="footer-col">
+                <h4>Connect with us</h4>
+                <ul class="footer-links social-links">
+                    <li><a href="#"
+                            data-url="https://www.facebook.com/p/Kamil-International-University-100093870713434/"><i
+                                class="fa-brands fa-facebook"></i> Facebook</a>
+                    </li>
+                    <li><a href="#" data-url="https://vt.tiktok.com/ZSXL66TNP/"><i class="fa-brands fa-tiktok"></i>
+                            Tiktok</a></li>
+                    <li><a href="#" data-url="https://info@kiu.edu.so"><i class="fa-solid fa-envelope"></i> Email</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright Footer -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>&copy; 2026 KIU University. All rights reserved.</p>
+                <div class="footer-bottom-meta">
+                    <a href="#" data-route="privacy-policy">Privacy Policy</a>
+                    <span class="dot-separator">&middot;</span>
+                    <a href="#" data-route="terms-of-service">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Direct Media Overlay / Image Viewer Lightbox -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="lightbox-content-wrapper">
+            <img src="" alt="Zoomed Media View" class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption">Media Caption</div>
+        </div>
+    </div>
+
+    <!-- External Web Address Notice Modal -->
+    <div class="modal-overlay" id="external-link-modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <i class="fa-solid fa-circle-exclamation modal-icon"></i>
+                <h3>Leaving KIU Website</h3>
+            </div>
+            <div class="modal-body">
+                <p>You are about to navigate to an external web address:</p>
+                <code class="external-url-display" id="external-url-display">https://example.com</code>
+                <p class="modal-subtext">Are you sure you want to proceed?</p>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-outline" id="modal-cancel">Cancel</button>
+                <a href="#" target="_blank" class="btn btn-primary" id="modal-proceed">Proceed <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification System (Interactive feedback) -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
